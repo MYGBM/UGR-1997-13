@@ -1,0 +1,60 @@
+.dropdown {
+    display: inline-block;
+    position: absolute;
+    float:right;
+  } 
+  .dropdown-content {
+    display:none;
+    position: absolute;
+    width: 100%;
+    float:right;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+   .form-element {
+     display:block;
+   }
+  .section-links {
+   display:block;
+  }
+
+  #footer{
+   position:sticky;
+   bottom:0;
+
+  }
+   
+  #logo{float:left;
+    position:relative;
+    top:0;
+    left:0;
+    z-index:-1;
+}
+  
+.center {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 40%;
+}
+#search{
+float:right;
+}
+.sidebar{
+width:auto;
+height:100%;
+position:fixed;
+z-index:1;
+top:0;
+right:0;
+overflow-x:hidden;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
