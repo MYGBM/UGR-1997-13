@@ -6,115 +6,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title> Contact Page</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>  
 
 </head>
 
 <body>
+ <div class="wrapper">
     <header> 
         <nav>
-            <img src=" https://logos-world.net/wp-content/uploads/2021/08/Blogger-Symbol.png" height="50" width="50"  alt="Page Logo">
-            <a href="./Home.html"> Home</a>
-            <nav class="dropdown">
-                <button>Blog</button>
-                <subnav class="dropdown-content">
-                <a href="./Productivity.html">Productivity</a>
-                <a href="./Meditation.html">Meditation</a>
-                <a href="./ActiveListening.html">ActiveListening</a>
-                </subnav>
-            </nav>
-            <a href="./Contact.html">Contact</a>
-            <a href="./About.html">About </a>
-            <input type="text" placeholder="Search..">
-
+          <div class="navcontainer">
+            <img class="navcontainer__el--logo" src=" https://logos-world.net/wp-content/uploads/2021/08/Blogger-Symbol.png" height="50" width="50"  alt="Page Logo">
+            <a class="navcontainer__el" href="./Home.html"> Home</a>
+            <a class="navcontainer__el" href="./Productivity.html">Blog</a>
+            <a class="navcontainer__el" href="./Contact.html">Contact</a>
+            <a class="navcontainer__el" href="./About.html">About </a>
+          </div>
         </nav>
     </header>
     <aside>
-        <nav>
-        <div class="sidebar">
-          <h3>Section Links</h3>
+      <div class="OpenBtn">
+       <span class="openbtn" style="font-size:30px;cursor:pointer" onclick="openNav()"> &#9776;</span>
+      </div>
+      <div class="sidebar" id="mySidenav">
+         
+         <a href="#" class="closebtn" onclick="closeNav()" >&times;</a>
+         
+         <h3 class="sidebar_el--text">Section Links</h3>
+     
+         <h4 class="sidebar_el--text">Blog</h4>
           
+          <a class="sidebar_el--link" href="./Productivity.html">Focus</a>
+          <a class="sidebar_el--link" href="./Meditation.html">Clarity</a>
+          <a class="sidebar_el--link" href="./ActiveListening.html">Communication</a>
+          
+          <h4 class="sidebar_el--text"> About Me</h4>
+          
+          <a class="sidebar_el--link" href="./About.html"> Testimonials</a>
+          <a class="sidebar_el--link" href="./About.html"> Projects</a>
+          <a class="sidebar_el--link" href="./About.html"> Ted Talks</a>
+          
+          <h4 class="sidebar_el--text"> Get in touch</h4>
+          
+          <a class="sidebar_el--link" href="./Contact.html"> Contact Me</a>
+          
+          <form id="form2">
+            <div id="error1"></div>
             
-              <h4 class="aside">Blog</h4>
-              
-              <a class="section-links" href="./Productivity.html">Focus</a>
-              <a class="section-links" href="./Meditation.html">Clarity</a>
-              <a class="section-links" href="./ActiveListening.html">Communication</a>
-              
-              <h4> About Me</h4>
-              
-              <a class="section-links" href="./About.html"> Testimonials</a>
-              <a class="section-links" href="./About.html"> Projects</a>
-              <a class="section-links"href="./About.html"> Ted Talks</a>
-              
-              <h4> Get in touch</h4>
-              
-              <a class="section-links" href="./Contact.html"> Contact Me</a>
-              <form >
-
-              <h4> Sign Up!</h4>
-              <input class="form-element" type="text" placeholder="Email">
-              <input class="form-element" type="text" placeholder="Username">
-              <button class="form-element"> Submit</button>
-              </form>
-            </div>    
-          </nav>
-    <main>
-     <figure>
-    <img src="images\location.png" alt="location logo"  width="100px" height="50px"/>
-    <figcaption>
+           <h4 class="sidebar_el--text"> Sign Up!</h4>
+           <input name="email" id ="email1"aria-label="form" class="sidebar_el--form" type="text" required placeholder="Email">
+           <input name="username" id="username" aria-label="form" class="sidebar_el--form" type="text" required placeholder="Username">
+           <button class="sidebar_el--button"> Submit</button>
+          </form>
+      </div>
+      
+    </aside>
+    
+    <main  id ="main" class="content">
+    <div class="contactcontainer">
+      <figure class="contact">
+     
+       <img class="contact__image" src="images\location.png" alt="location logo"  width="100px" height="50px"/>
+       <figcaption class="contact__info">
         <ul>
         <li> P.O. Box 283 8562 Fusce Rd.</li>
         <li> Frederick Nebraska 20620</li>
         <li>James Clear, New York</li>
-       </ul>
-    </figcaption>
-   </figure>
-   <figure>
-    <img src="images\contact.jpg" alt="contacts logo"  width="100px" height="50px"/>
-    <figcaption>
+        </ul>
+       </figcaption>
+      </figure>
+      <figure class="contact">
+       <img class="contact__image" src="images\contact.jpg" alt="contacts logo"  width="100px" height="50px"/>
+       <figcaption class="contact__info">
         <ul>
-        <li> US :+1(800) 642 7676.</li>
-        <li> uk:+44(0)344 800 2400</li>
-        <li> SouthAfrica:+258 84 622 2398</li>
-       </ul>
-    </figcaption>
-   </figure>
-   <figure>
-    <img src="images\message.jpg" alt=" messages logo"  width="100px" height="50px"/>
-    <figcaption>
+         <li> US :+1(800) 642 7676.</li>
+         <li> uk:+44(0)344 800 2400</li>
+         <li> SouthAfrica:+258 84 622 2398</li>
+        </ul>
+       </figcaption>
+      </figure>
+      <figure class="contact">
+       <img class="contact__image" src="images\message.jpg" alt=" messages logo"  width="100px" height="50px"/>
+       <figcaption class="contact__info">
         <ul>
-        <li>Whatsapp: +1(800) 642 7676.</li>
-        <li>Viber:+44(0)344 800 2400</li>
-        <li> Telegram:+258 84 622 2398</li>
-       </ul>
-    </figcaption>
-   </figure>
-   <form>
-    <p> We'd love to get in touch and learn more about you. So, send us a message and we'll reply as fast as we can.</p>
-    <h2> Email</h2>
-    <input class="form-element" type="text" placeholder="someone@gmail.com">
-    <h2> Name </h2>
-    <input class="form-element" type="text" placeholder="James Clear">  
-    <h2>Phone Number</h2>
-    <input class="form-element" type="text" placeholder="+1(800) 642 7676">
-    <h2> How often do you want to recieve our newsletter</h2>
-    <label for="Weekly">
-        Weekly
-    </label>
-    <input type="radio" name="frequency"
-       id="weekly" value="weekly"><br>
-    <label for="Every two weeks"> Fortnight</label>
-    <input type="radio" name="frequency"
-    id="fortnight" value="fornight"><br>
-   <label for="Monthly"> Monthly</label>
-   <input type="radio" name="frequency"
-   id="monthly" value="monthly"><br>
-   <button>Submit</button>
+         <li>Whatsapp: +1(800) 642 7676.</li>
+         <li>Viber:+44(0)344 800 2400</li>
+         <li> Telegram:+258 84 622 2398</li>
+        </ul>
+       </figcaption>
+      </figure>
+    </div>
+   <form class="contact-form" id="form" method="post">
+     <div id="message"></div>
+     
+    <div class="contact-form-container">
+     <h2 class="contact-form__heading"> We'd love to get in touch and learn more about you. So, send us a message and we'll reply as fast as we can.</h2>
+     <h2 class="contact-form__heading"> Email</h2>
+     
+     <input id="email" aria-label="email"  name="email" class="contact-form__form" type="text" required placeholder="someone@gmail.com">
+     <h2 class="contact-form__heading"> Name </h2>
+     <input id="name" name="name" aria-label="name" class="contact-form__form" type="text" required  placeholder="James Clear">  
+     <h2 class="contact-form__heading">Phone Number</h2>
+     
+     <input id ="phonenumber" name="phonenumber"aria-label="phonenumber" class="contact-form__form" required type="text" placeholder="+1(800) 642 7676">
+     <button class="contact-form__button">Submit</button>
+     <h2 class="contact-form__heading"> How often do you want to recieve our newsletter?</h2>
+    </div> 
    </form>
-</main>
-<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>                                        
+  <form class="form-control">
+   <div class="form-control-container">
+ 
+    <label class="form-control__el" for="every week">Weekly
+     <input type="radio" name="frequency"
+      id="weekly" value="weekly">
+    </label>
+
+    <label class="form-control__el" for="Every two weeks"> Fortnight
+     <input type="radio" name="frequency"
+     id="fortnight" value="fornight">
+    </label>
+   <label class="form-control__el" for="Monthly"> Monthly
+    <input type="radio" name="frequency"
+    id="monthly" value="monthly">
+    </label>
+    <label class="form-control__el">
+     <button class="form-control__el--button">Submit</button>
+    </label>
+   </div>
+  </label>
+</form>
+ </main>
+ </div>                                      
 </body>
-<footer id="footer"> 
+<footer>
+  <div class="footer">
+
     <p> Join over 2M <sup>+</sup>avid readers
         <a href="https://twitter.com/JamesClear" target="_blank">
             <ion-icon name="logo-twitter"></ion-icon>
@@ -129,4 +155,5 @@
     </p>
     
     <p> @ 2022 Copyright reserved</p>
+    </div>
 </footer>

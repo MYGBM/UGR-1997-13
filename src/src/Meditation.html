@@ -6,61 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title> Blog website</title>
     <link rel="stylesheet" href="style.css">
-
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </head>
 
 <body>
     <header> 
         <nav>
-            <img src=" https://logos-world.net/wp-content/uploads/2021/08/Blogger-Symbol.png" height="50" width="50"  alt="Page Logo">
-            <a href="./Home.html"> Home</a>
-            <nav class="dropdown">
-                <button>Blog</button>
-                <subnav class="dropdown-content">
-                <a href="./Productivity.html">Productivity</a>
-                <a href="./Meditation.html">Meditation</a>
-                <a href="./ActiveListening.html">ActiveListening</a>
-                </subnav>
-            </nav>
-            <a href="./Contact.html">Contact</a>
-            <a href="./About.html">About </a>
-
-            <input type="text" placeholder="Search..">    
-        </nav>
+          <div class="navcontainer">
+            <img class= "navcontainer__el--logo"  src=" https://logos-world.net/wp-content/uploads/2021/08/Blogger-Symbol.png" height="50" width="50"  alt="Page Logo">
+            <a class= "navcontainer__el" href="./Home.html"> Home</a>
+            <a class= "navcontainer__el"  href="./Productivity.html">Productivity</a>
+            <a class= "navcontainer__el"  href="./Contact.html">Contact</a>
+            <a class= "navcontainer__el"  href="./About.html">About </a>
+          </nav>
     </header>
     <aside>
-        <nav>
-        <div class="sidebar">
-          <h3>Section Links</h3>
+      <div class="OpenBtn">
+       <span class="openbtn" style="font-size:30px;cursor:pointer" onclick="openNav()"> &#9776;</span>
+      </div>
+      <div class="sidebar" id="mySidenav">
+         
+         <a href="#" class="closebtn" onclick="closeNav()" >&times;</a>
+         
+         <h3 class="sidebar_el--text">Section Links</h3>
+     
+         <h4 class="sidebar_el--text">Blog</h4>
           
-            
-              <h4 class="aside">Blog</h4>
-              
-              <a class="section-links" href="./Productivity.html">Focus</a>
-              <a class="section-links" href="./Meditation.html">Clarity</a>
-              <a class="section-links" href="./ActiveListening.html">Communication</a>
-              
-              <h4> About Me</h4>
-              
-              <a class="section-links" href="./About.html"> Testimonials</a>
-              <a class="section-links" href="./About.html"> Projects</a>
-              <a class="section-links"href="./About.html"> Ted Talks</a>
-              
-              <h4> Get in touch</h4>
-              
-              <a class="section-links" href="./Contact.html"> Contact Me</a>
-              <form >
+          <a class="sidebar_el--link" href="./Productivity.html">Focus</a>
+          <a class="sidebar_el--link" href="./Meditation.html">Clarity</a>
+          <a class="sidebar_el--link" href="./ActiveListening.html">Communication</a>
+          
+          <h4 class="sidebar_el--text"> About Me</h4>
+          
+          <a class="sidebar_el--link" href="./About.html"> Testimonials</a>
+          <a class="sidebar_el--link" href="./About.html"> Projects</a>
+          <a class="sidebar_el--link" href="./About.html"> Ted Talks</a>
+          
+          <h4 class="sidebar_el--text"> Get in touch</h4>
+          
+          <a class="sidebar_el--link" href="./Contact.html"> Contact Me</a>
+          
 
-              <h4> Sign Up!</h4>
-              <input class="form-element" type="text" placeholder="Email">
-              <input class="form-element" type="text" placeholder="Username">
-              <button class="form-element"> Submit</button>
-              </form>
-            </div>    
-          </nav>
-    <main>
+          <h4 class="sidebar_el--text"> Sign Up!</h4>
+          <input aria-label="form" class="sidebar_el--form" type="text" placeholder="Email">
+          <input aria-label="form" class="sidebar_el--form" type="text" placeholder="Username">
+          <button class="sidebar_el--button"> Submit</button>
+      </div>
+      
+    </aside>
+    <main  id="main" class="content">
      <h1>Meditation</h1>
-     <p> Written by James Clear. Blog, Spiritual, Clarity</p>
+     <p><em>Written by James Clear. Blog, Spiritual, Clarity </em></p>
      <h2>Understanding Meditation</h2>
      <p>Meditation has been practiced for thousands of years. Meditation originally was meant to help deepen understanding of the sacred and mystical forces of life. These days, meditation is commonly used for relaxation and stress reduction.Meditation is considered a type of mind-body complementary medicine. Meditation can produce a deep state of relaxation and a tranquil mind.
         During meditation, you focus your attention and eliminate the stream of jumbled thoughts that may be crowding your mind and causing stress. This process may result in enhanced physical and emotional well-being.</p>
@@ -68,19 +65,20 @@
     <p>Meditation can give you a sense of calm, peace and balance that can benefit both your emotional well-being and your overall health. You can also use it to relax and cope with stress by refocusing your attention on something calming. Meditation can help you learn to stay centered and keep inner peace.
       And these benefits don't end when your meditation session ends. Meditation can help carry you more calmly through your day. And meditation may help you manage symptoms of certain medical conditions.</p>
     <h2> Everyday ways to practice Meditation</h2>
-    <h3> Breathe deeply</h3>
+    <h2> Breathe deeply</h2>
     <p>This technique is good for beginners because breathing is a natural function.
       Focus all your attention on your breathing. Concentrate on feeling and listening as you inhale and exhale through your nostrils. Breathe deeply and slowly. When your attention wanders, gently return your focus to your breathing.</p>
-    <h3>Scan your body</h3>
+    <h2>Scan your body</h2>
     <p> When using this technique, focus attention on different parts of your body. Become aware of your body's various sensations, whether that's pain, tension, warmth or relaxation. Combine body scanning with breathing exercises and imagine breathing heat or relaxation into and out of different parts of your body.</p>
-    <h3>Walk and meditate.</h3>
+    <h2>Walk and meditate.</h2>
     <p>Combining a walk with meditation is an efficient and healthy way to relax. You can use this technique anywhere you're walking, such as in a tranquil forest, on a city sidewalk or at the mall.
-  When you use this method, slow down your walking pace so that you can focus on each movement of your legs or feet. Don't focus on a particular destination. Concentrate on your legs and feet, repeating action words in your mind such as "lifting," "moving" and "placing" as you lift each foot, move your leg forward and place your foot on the ground. Focus on the sights, sounds and smells around you</p>
+  When you use this method, slow down your walking pace so that you can focus on each movement of your legs or feet. Don't focus on a particular destination. Concentrate on your legs and feet, repeating action words in your mind such as "lifting," "moving" and "placing" as you lift each foot, move your leg forward and place your foot on the ground. Focus on the sights, sounds and smells around you.</p>
     
     </main>
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+ 
 </body>
-<footer id="footer"> 
+<footer>
+  <div class="footer">
     <p> Join over 2M <sup>+</sup>avid readers
       <a href="https://twitter.com/JamesClear" target="_blank">
         <ion-icon name="logo-twitter"></ion-icon>
@@ -95,4 +93,5 @@
     </p>
     
     <p> @ 2022 Copyright reserved</p>
+  </div>
 </footer>

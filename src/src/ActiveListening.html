@@ -6,86 +6,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title> Blog website</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </head>
 
-<body>
+<body class="wrapper">
     <header> 
         <nav>
-            <img src=" https://logos-world.net/wp-content/uploads/2021/08/Blogger-Symbol.png" height="50" width="50"  alt="Page Logo">
-            <a href="./Home.html"> Home</a>
-            <nav class="dropdown">
-                <button>Blog</button>
-                <subnav class="dropdown-content">
-                <a href="./Productivity.html">Productivity</a>
-                <a href="./Meditation.html">Meditation</a>
-                <a href="./ActiveListening.html">ActiveListening</a>
-                </subnav>
-            </nav>
-            <a href="./Contact.html">Contact</a>
-            <a href="./About.html">About </a>
-            <input type="text" placeholder="Search..">
-            
-        </nav>
-    </header>
-    <aside>
-        <nav>
-        <div class="sidebar">
-          <h3>Section Links</h3>
+          <div class="navcontainer">
+            <img class="navcontainer__e" src=" https://logos-world.net/wp-content/uploads/2021/08/Blogger-Symbol.png" height="50" width="50"  alt="Page Logo">
+            <a class="navcontainer__el" href="./Home.html"> Home</a>
+            <a class="navcontainer__el" href="./Productivity.html">Blog</a>
+            <a class="navcontainer__el" href="./Contact.html">Contact</a>
+            <a class="navcontainer__el"  href="./About.html">About </a>
+          </div>
+         </nav>
+         <aside>
+          <div class="OpenBtn">
+           <span class="openbtn" style="font-size:30px;cursor:pointer" onclick="openNav()"> &#9776;</span>
+          </div>
+          <div class="sidebar" id="mySidenav">
+             
+             <a href="#" class="closebtn" onclick="closeNav()" >&times;</a>
+             
+             <h3 class="sidebar_el--text">Section Links</h3>
+         
+             <h4 class="sidebar_el--text">Blog</h4>
+              
+              <a class="sidebar_el--link" href="./Productivity.html">Focus</a>
+              <a class="sidebar_el--link" href="./Meditation.html">Clarity</a>
+              <a class="sidebar_el--link" href="./ActiveListening.html">Communication</a>
+              
+              <h4 class="sidebar_el--text"> About Me</h4>
+              
+              <a class="sidebar_el--link" href="./About.html"> Testimonials</a>
+              <a class="sidebar_el--link" href="./About.html"> Projects</a>
+              <a class="sidebar_el--link" href="./About.html"> Ted Talks</a>
+              
+              <h4 class="sidebar_el--text"> Get in touch</h4>
+              
+              <a class="sidebar_el--link" href="./Contact.html"> Contact Me</a>
+              
+    
+              <h4 class="sidebar_el--text"> Sign Up!</h4>
+              <input aria-label="form" class="sidebar_el--form" type="text" placeholder="Email">
+              <input aria-label="form" class="sidebar_el--form" type="text" placeholder="Username">
+              <button class="sidebar_el--button"> Submit</button>
+          </div>
           
-            
-              <h4 class="aside">Blog</h4>
-              
-              <a class="section-links" href="./Productivity.html">Focus</a>
-              <a class="section-links" href="./Meditation.html">Clarity</a>
-              <a class="section-links" href="./ActiveListening.html">Communication</a>
-              
-              <h4> About Me</h4>
-              
-              <a class="section-links" href="./About.html"> Testimonials</a>
-              <a class="section-links" href="./About.html"> Projects</a>
-              <a class="section-links"href="./About.html"> Ted Talks</a>
-              
-              <h4> Get in touch</h4>
-              
-              <a class="section-links" href="./Contact.html"> Contact Me</a>
-              <form >
-
-              <h4> Sign Up!</h4>
-              <input class="form-element" type="text" placeholder="Email">
-              <input class="form-element" type="text" placeholder="Username">
-              <button class="form-element"> Submit</button>
-              </form>
-            </div>    
-          </nav>
-    <main>
+        </aside>
+    </header>
+    
+    <main id="main" class="content">
      <h1> Active Listening</h1>
-     <p> Written by James Clear. Blog, Social, Communication</p>
+     <p> <em>Written by James Clear. Blog, Social, Communication </em></p>
      <h2> What is active listening?</h2>
      <p>Active listening' means, as its name suggests, actively listening. That is fully concentrating on what is being said rather than just passively ‘hearing’ the message of the speaker.</p>
      <p>Active listening is a skill that can be acquired and developed with practice. However, active listening can be difficult to master and will, therefore, take time and patience to develop.</p>
      <h2>Signs of active listening</h2>
-     <h3>Non-Verbal Signs of Attentive or Active Listening</h3>
-     <h4>Smile</h4>
+     <h2>Non-Verbal Signs of Attentive or Active Listening</h2>
+     <h2>Smile</h2>
      <p>Small smiles can be used to show that the listener is paying attention to what is being said or as a way of agreeing or being happy about the messages being received. Combined with nods of the head, smiles can be powerful in affirming that messages are being listened to and understood.</p>
-     <h4>Eye Contact</h4>
+     <h2>Eye Contact</h2>
      <p>It is normal and usually encouraging for the listener to look at the speaker. Eye contact can however be intimidating, especially for more shy speakers – gauge how much eye contact is appropriate for any given situation. Combine eye contact with smiles and other non-verbal messages to encourage the speaker.</p>
-     <h4>Posture</h4>
+     <h2>Posture</h2>
      <p>Posture can tell a lot about the sender and receiver in interpersonal interactions.  The attentive listener tends to lean slightly forward or sideways whilst sitting. Other signs of active listening may include a slight slant of the head or resting the head on one hand. </p>
-     <h4>Mirroring</h4>
+     <h2>Mirroring</h2>
      <p> Automatic reflection/mirroring of any facial expressions used by the speaker can be a sign of attentive listening. These reflective expressions can help to show sympathy and empathy in more emotional situations. Attempting to consciously mimic facial expressions (i.e. not automatic reflection of expressions) can be a sign of inattention.</p>
-     <h3>Verbal Signs of Attentive or Active Listening</h3>
-     <h4>Positive Reinforcement</h4>
+     <h2>Verbal Signs of Attentive or Active Listening</h3>
+     <h2>Positive Reinforcement</h2>
      <em>Although a strong signal of attentiveness, caution should be used when using positive verbal reinforcement.</em>
      <p> Although some positive words of encouragement may be beneficial to the speaker the listener should use them sparingly so as not to distract from what is being said or place unnecessary emphasis on parts of the message.
        Casual and frequent use of words and phrases, such as: ‘very good’, ‘yes’ or ‘indeed’ can become irritating to the speaker. It is usually better to elaborate and explain why you are agreeing with a certain point.</p>
-    <h4>Questioning</h4>
+    <h2>Questioning</h2>
     <p>The listener can demonstrate that they have been paying attention by asking relevant questions and/or making statements that build or help to clarify what the speaker has said. By asking relevant questions the listener also helps to reinforce that they have an interest in what the speaker has been saying.</p>
-    <h4>Reflection</h4>
+    <h2>Reflection</h2>
     <p> Reflecting is closely repeating or paraphrasing what the speaker has said in order to show comprehension. Reflection is a powerful skill that can reinforce the message of the speaker and demonstrate understanding.</p>
     </main>
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    
 </body>
-<footer id="footer"> 
+<footer>
+  <div class="footer"> 
     <p> Join over 2M <sup>+</sup>avid readers
         <a href="https://twitter.com/JamesClear" target="_blank">
             <ion-icon name="logo-twitter"></ion-icon>
@@ -98,6 +99,6 @@
           <a href="https://www.youtube.com/@ProductivityGame" target="_blank">
             <ion-icon name="logo-youtube"></ion-icon>
     </p>
-    
     <p> @ 2022 Copyright reserved</p>
+  </div>  
 </footer>

@@ -6,103 +6,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title> Blog website</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </head>
 
 <body>
-    
+  <div class="wrapper">
     <header> 
         <nav>
-            <img src=" https://logos-world.net/wp-content/uploads/2021/08/Blogger-Symbol.png" height="50" width="50"  alt="Page Logo">
-            <a href="./Home.html"> Home</a>
-            <nav class="dropdown">
-                <button>Blog</button>
-                <subnav class="dropdown-content">
-                <a href="./Productivity.html">Productivity</a>
-                <a href="./Meditation.html">Meditation</a>
-                <a href="./ActiveListening.html">ActiveListening</a>
-                </subnav>
-            </nav>
-            <a href="./Contact.html">Contact</a>
-            <a href="./About.html">About </a>
-            <input type="text" placeholder="Search..">
+          <div class="navcontainer">
+            <img class="navcontainer__el--logo" src=" https://logos-world.net/wp-content/uploads/2021/08/Blogger-Symbol.png" height="50" width="50"  alt="Page Logo">
+            <a class="navcontainer__el"href="./Home.html"> Home</a>
+            <a class="navcontainer__el"href="./Productivity.html">Blog</a>
+            <a class="navcontainer__el" href="./Contact.html">Contact</a>
+            <a class="navcontainer__el" href="./About.html">About </a>
             
         </nav>
-    </header>
         <aside>
-          <nav>
-          <div class="sidebar">
-            <h3>Section Links</h3>
-            
+          <div class="OpenBtn">
+           <span class="openbtn" style="font-size:30px;cursor:pointer" onclick="openNav()"> &#9776;</span>
+          </div>
+          <div class="sidebar" id="mySidenav">
+             
+             <a href="#" class="closebtn" onclick="closeNav()" >&times;</a>
+             
+             <h3 class="sidebar_el--text">Section Links</h3>
+         
+             <h4 class="sidebar_el--text">Blog</h4>
               
-                <h4 class="aside">Blog</h4>
-                
-                <a class="section-links" href="./Productivity.html">Focus</a>
-                <a class="section-links" href="./Meditation.html">Clarity</a>
-                <a class="section-links" href="./ActiveListening.html">Communication</a>
-                
-                <h4> About Me</h4>
-                
-                <a class="section-links" href="./About.html"> Testimonials</a>
-                <a class="section-links" href="./About.html"> Projects</a>
-                <a class="section-links"href="./About.html"> Ted Talks</a>
-                
-                <h4> Get in touch</h4>
-                
-                <a class="section-links" href="./Contact.html"> Contact Me</a>
-                <form >
+              <a class="sidebar_el--link" href="./Productivity.html">Focus</a>
+              <a class="sidebar_el--link" href="./Meditation.html">Clarity</a>
+              <a class="sidebar_el--link" href="./ActiveListening.html">Communication</a>
+              
+              <h4 class="sidebar_el--text"> About Me</h4>
+              
+              <a class="sidebar_el--link" href="./About.html"> Testimonials</a>
+              <a class="sidebar_el--link" href="./About.html"> Projects</a>
+              <a class="sidebar_el--link" href="./About.html"> Ted Talks</a>
+              
+              <h4 class="sidebar_el--text"> Get in touch</h4>
+              
+              <a class="sidebar_el--link" href="./Contact.html"> Contact Me</a>
+              
 
-                <h4> Sign Up!</h4>
-                <input class="form-element" type="text" placeholder="Email">
-                <input class="form-element" type="text" placeholder="Username">
-                <button class="form-element"> Submit</button>
-                </form>
-              </div>    
-            </nav>
+              <h4 class="sidebar_el--text"> Sign Up!</h4>
+              <input aria-label="form" class="sidebar_el--form" type="text" placeholder="Email">
+              <input aria-label="form" class="sidebar_el--form" type="text" placeholder="Username">
+              <button class="sidebar_el--button"> Submit</button>
+          </div>
+          </aside>
+    </header>
     
-    <main>
-    <h1> Hi there, I'm James Clear!</h1>
-    <p>I’m the author of the #1 New York Times bestseller, Atomic Habits, which has sold more than 10 million copies worldwide. My work has been featured in places like Time magazine, the New York Times, the Wall Street Journal and on CBS This Morning.In addition to writing, I am a regular speaker at Fortune 500 companies. Previous clients include Capital One, Cisco, General Electric, Honda, Intel, LinkedIn, Lululemon, McKinsey & Company, Merrill Lynch and many more</p>
-    
-    <video width="400" height="240" controls>
-      <source src="videos\About.mp4" type="video/mp4">
-    </video>
-
-    <h2> Here are my latest projects</h2>
-    <img src="images\Atomichabits.png" alt="picture of atomic habits book by author James clear." width="350px" height="150px"/>
-    <img src="images\newsletter.png" alt="picture of newsletter 3-2-1." width="350px" height="150px"/>
-    <img src="images\speech.webp" alt="picture of james clear speaking at a cisco event" width="350px" height="150px"/>
-    <h2> Hear what people have to say about me</h2>
+    <main id ="main" class="content">
+    <h1> <em>Hi there, I'm James Clear! </em></h1>
+    <h2>I’m the author of the #1 New York Times bestseller, Atomic Habits, which has sold more than 10 million copies worldwide. My work has been featured in places like Time magazine, the New York Times, the Wall Street Journal and on CBS This Morning.In addition to writing, I am a regular speaker at Fortune 500 companies. Previous clients include Capital One, Cisco, General Electric, Honda, Intel, LinkedIn, Lululemon, McKinsey & Company, Merrill Lynch and many more.</h2>
     <figure>
-      <img src="images\testimonial1.webp" alt="" width="200" height="100"/>
-      <figcaption><em> Entrepreneur.</em>"Atomic habits has helped me from a rut to start my own company." </figcaption>
-    </figure>
-
-    <figure>
-    <img src="images\testimonial2.jpg" alt="" width="200" height="100"/>
-    <figcaption><em>Chief of Technology at Cisco.</em>"James clear has tremondously increased the productivity in our company" </figcaption>
+      
+       <video width="100%" height="auto" controls> 
+       <source  src="videos\About.mp4" type="video/mp4"> </video>
+      
     </figure>
     
-    <figure>
-    <img src="images\testimonial3.jpg" alt="" width="200" height="100"/>
-    <figcaption><em>Director of New York Times Journal.</em> "James Clear's writings are an inspiration for everyone"</figcaption>
+    <h2 style="text-align: center;"> <em>Here are my latest projects </em></h2 >
+    <figure class="latestprojects">
+     
+     <img class=" latestprojects__el" src="images\newsletter.png" alt=" of newsletter 3-2-1." width="350px" height="300"/>
+     <img class="latestprojects__el" src="images\Atomichabits.png" alt="atomic habits book by author James clear." width="350px" height="380"/>
+     <img class="latestprojects__el" src="images\speech.webp" alt="james clear speaking at a cisco event" width="350px" height="300"/>
+    </figure>
+    <h2 style="text-align: center;"><em>Hear what people have to say about me</em></h2>
+    <figure class="testimonial-block">
+     
+       <img class="testimonial-block__image--1"src="images\testimonial1.webp" alt="man with glasses" width="150" height="200"/>
+       <figcaption class="testimonial-block__text--1"><em> Laurie Marbas, MD, United States Air Force veteran</em>" Atomic Habits not only does the book offer actionable items I can teach my patients " </figcaption>
+       <img class="testimonial-block__image--2" src="images\testimonial2.jpg" alt="man with glasses smiling" width="150" height="200"/>
+      <figcaption class="testimonial-block__text--2" ><em>Chief of Technology at Cisco.</em>"James clear has tremondously increased the productivity in our company" </figcaption>
+      <img class="testimonial-block__image--3"src="images\testimonial3.jpg" alt="woman with glasses smiling" width="150" height="200"/>
+      <figcaption class="testimonial-block__text--3"><em>Director of New York Times Journal.</em> "James Clear's writings are an inspiration for everyone"</figcaption>
+     
     </figure>
 
     </main>
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    
+  </div>
 </body>
-<footer id="footer"> 
-  <p> Join over 2M <sup>+</sup>avid readers
-    <a href="https://twitter.com/JamesClear" target="_blank">
-      <ion-icon name="logo-twitter"></ion-icon>
-    <a href="https://www.facebook.com/jamesclear/" target="_blank">
-      <ion-icon name="logo-facebook"></ion-icon> 
-    <a href="https://www.linkedin.com/in/jamesclear/" target="_blank">
-      <ion-icon name="logo-linkedin"></ion-icon>
-    <a href="https://www.instagram.com/jamesclear/channel/?hl=en" target="_blank">
-      <ion-icon name="logo-instagram"></ion-icon>
-    <a href="https://www.youtube.com/@ProductivityGame" target="_blank">
-      <ion-icon name="logo-youtube"></ion-icon>
-  </p>
-  
-  <p> @ 2022 Copyright reserved</p>
+<footer>
+  <div class="footer"> 
+    <p> Join over 2M <sup>+</sup>avid readers
+        <a href="https://twitter.com/JamesClear" target="_blank">
+          <ion-icon name="logo-twitter"></ion-icon>
+        <a href="https://www.facebook.com/jamesclear/" target="_blank">
+          <ion-icon name="logo-facebook"></ion-icon> 
+        <a href="https://www.linkedin.com/in/jamesclear/" target="_blank">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        <a href="https://www.instagram.com/jamesclear/channel/?hl=en" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+        <a href="https://www.youtube.com/@ProductivityGame" target="_blank">
+          <ion-icon name="logo-youtube"></ion-icon>
+    </p>
+    
+    <p>2022 Copyright reserved</p>
+    </div>
   </footer>
