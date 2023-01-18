@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title> Blog website</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./src/script.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header> 
+          <nav>
+            <div class="navcontainer">
+             <img class="navcontainer__el--logo"src="https://logos-world.net/wp-content/uploads/2021/08/Blogger-Symbol.png" alt="Page Logo">
+             <a class="navcontainer__el" href="./index.html">Home</a>
+             <a class="navcontainer__el" href="./src/Productivity.html">Blog</a>
+             <a class="navcontainer__el" href="./src/Contact.html">Contact</a>
+             <a class="navcontainer__el" href="./src/About.html">About </a>
+            </div>
+          </nav>
+             
+          <aside>
+            <div class="OpenBtn">
+             <span class="openbtn" style="font-size:30px;cursor:pointer" onclick="openNav()"> &#9776;</span>
+            </div>
+            <div class="sidebar" id="mySidenav">
+               
+               <a href="#" class="closebtn" onclick="closeNav()" >&times;</a>
+               
+               <h3 class="sidebar_el--text">Section Links</h3>
+           
+               <h4 class="sidebar_el--text">Blog</h4>
+                
+                <a class="sidebar_el--link" href="./src/Productivity.html">Focus</a>
+                <a class="sidebar_el--link" href="./src/Meditation.html">Clarity</a>
+                <a class="sidebar_el--link" href="./src/ActiveListening.html">Communication</a>
+                
+                <h4 class="sidebar_el--text"> About Me</h4>
+                
+                <a class="sidebar_el--link" href="./src/About.html"> Testimonials</a>
+                <a class="sidebar_el--link" href="./src/About.html"> Projects</a>
+                <a class="sidebar_el--link" href="./src/About.html"> Ted Talks</a>
+                
+                <h4 class="sidebar_el--text"> Get in touch</h4>
+                
+                <a class="sidebar_el--link" href="./src/Contact.html"> Contact Me</a>
+                
+
+                <h4 class="sidebar_el--text"> Sign Up!</h4>
+                <input aria-label="form" class="sidebar_el--form" type="text" placeholder="Email">
+                <input aria-label="form" class="sidebar_el--form" type="text" placeholder="Username">
+                <button class="sidebar_el--button"> Submit</button>
+            </div>
+            
+          </aside>
+        <main  id ="main" class="content">
+         <figure>
+          <div class="homeimage">
+          <img src="./src/images\Blog.jpg" alt="a blog laptop" class="homeimage__image" width="100%" height=auto/>
+         </figure>
+         </div>
+         <figure class="featured-blog">
+          <div class="container1">
+           <img class="featured-blog__image--1" src="./src/images\JamesClear.webp" alt=" man smiling" width="300px" height="auto"/>
+           <figcaption class="featured-blog__caption--1">Hi there, I'm James clear.I’m the author of the #1 New York Times bestseller, Atomic Habits, which has sold more than 10 million copies worldwide. My work has been featured in places like Time magazine, the New York Times, the Wall Street Journal and on CBS. <a href="./About.html"><button class="featured-blog__button">Read More</button></a></figcaption>
+          </div>
+         </figure>
+         <div class="container2">
+          <figure class="featured-blog">
+    
+           <img class="featured-blog__image--2" src="./src/images\productivity.jpg" alt="clock" width="100px" height="100px"/>
+           <figcaption class="featured-blog__caption--2"> Having a hard time completing tasks throughout the day? <a href="./src/Productivity.html"><button class="featured-blog__button">Read More</button></a></figcaption>
+          </figure>
+          <figure class="featured-blog">
+           <img class="featured-blog__image--3" src="./src/images\ActiveListening.png" alt=" conversation signs going into ear " width="100px" height="100px"/>
+           <figcaption class="featured-blog__caption--3"> Having a hard time communicating? Unlock the secret to communication and build great relationships.<a href="./src/ActiveListening.html"><button class="featured-blog__button">Read More</button></a></figcaption>
+          </figure>
+         </div>
+       
+        <figure class="featured-blog">
+          <div class="container3">
+           <img class="featured-blog__image--4"src="./src/images\meditation.jpg" alt=" meditating man" width="100px" height="100px"/>
+           <figcaption class="featured-blog__caption--4">Do you usually feel slugglish and out of focus throughout your day. Even a little stressed.Having a hard time concentarting?  Unlock the secret to meditation.<a href="./src/Meditation.html"><button class="featured-blog__button">Read More</button></a></figcaption>
+        </div>
+      </figure>
+    
+        </main>
+      
+    </header>
+    
+</div>
+</body>
+<footer>
+<div class="footer"> 
+  <p> Join over 2M <sup>+</sup>avid readers
+    <a href="https://twitter.com/JamesClear" target="_blank">
+        <ion-icon name="logo-twitter"></ion-icon>
+      <a href="https://www.facebook.com/jamesclear/" target="_blank">
+        <ion-icon name="logo-facebook"></ion-icon> 
+      <a href="https://www.linkedin.com/in/jamesclear/" target="_blank">
+        <ion-icon name="logo-linkedin"></ion-icon>
+      <a href="https://www.instagram.com/jamesclear/channel/?hl=en" target="_blank">
+        <ion-icon name="logo-instagram"></ion-icon>
+      <a href="https://www.youtube.com/@ProductivityGame" target="_blank">
+        <ion-icon name="logo-youtube"></ion-icon>
+</p>
+  
+  <p>2022 Copyright reserved</p>
+  </div>
+  </footer>
